@@ -60,12 +60,13 @@ ul li:active {
 }
 
 ul li:nth-child(16) {
-    border: 2px solid red;
     height: 75px;
     line-height: 75px;
-    position: relative;
-    float: right;
-    top: -53px;
+}
+
+ul li:last-child {
+    margin-top: -48px;
+    width: 65%;
 }
 
 .signature {
@@ -73,7 +74,6 @@ ul li:nth-child(16) {
     font-size: 1rem;
     text-align: right;
     position: relative;
-    top: 110px;
     right: 5px;
     z-index: -1;
 }
