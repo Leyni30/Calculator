@@ -7,7 +7,7 @@ $buttons.forEach(function (node) {
         console.log(value)
         const $result = document.querySelector('.result');
         console.log($result)
-        let resultText = $result.innerText.trim();
+        const resultText = $result.innerText.trim();
         console.log(resultText)
         /*Then I go over them with forEach method that can go over the nodeList
         and on each I apply a function defined in the method as a parameter.
