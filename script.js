@@ -1,5 +1,5 @@
 const $buttons = document.querySelectorAll("ul li")
-// Firstly I grab a hold of the list items in the ul tag, or the buttons so I can go over them and make them work.
+// Firstly, I grab a hold of the list items in the ul tag, or the buttons so I can go over them and make them work.
 console.log($buttons)
 $buttons.forEach(function (node) {
     node.addEventListener('mousedown', event => {
@@ -25,15 +25,18 @@ $buttons.forEach(function (node) {
         */
 
         if (resultText == '0' || resultText == "Infinity" || resultText == "undefined") {
-            $result.innerText = "";
+            // $result.innerText = "";
+            resultText = "";
         } // Here I learned it is best practice to put the least expected outcome first.
         if (value == "=") {
             let solution = eval(resultText);
-            $result.innerText = solution;
+            // $result.innerText = solution;
+            resultText = solution;
             return true;
         }
         if (value.toLowerCase() == 'c') {
-            $result.innerText = "";
+            //$result.innerText = "";
+            resultText = "";
             return true;
         }
 
