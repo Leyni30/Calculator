@@ -7,7 +7,7 @@ $buttons.forEach(function (node) {
         console.log(value)
         const $result = document.querySelector('.result');
         console.log($result)
-        const resultText = $result.innerText.trim();
+        let resultText = $result.innerText.trim();
         console.log(resultText)
         /*Then I go over them with forEach method that can go over the nodeList
         and on each I apply a function defined in the method as a parameter.
@@ -25,18 +25,16 @@ $buttons.forEach(function (node) {
         */
 
         if (resultText == '0' || resultText == "Infinity" || resultText == "undefined") {
-            // $result.innerText = "";
-            resultText = "";
+            $result.innerText = "";
+
         } // Here I learned it is best practice to put the least expected outcome first.
         if (value == "=") {
             let solution = eval(resultText);
-            // $result.innerText = solution;
-            resultText = solution;
+            $result.innerText = solution;
             return true;
         }
         if (value.toLowerCase() == 'c') {
-            //$result.innerText = "";
-            resultText = "";
+            $result.innerText = "";
             return true;
         }
 
