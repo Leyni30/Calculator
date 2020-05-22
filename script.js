@@ -1,4 +1,4 @@
-const $buttons = document.querySelectorAll(".list li")
+const $buttons = document.querySelectorAll("ul li")
 // Firstly I grab a hold of the list items in the ul tag, or the buttons so I can go over them and make them work.
 console.log($buttons)
 $buttons.forEach(function (node) {
